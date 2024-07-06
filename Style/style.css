@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+/* the whole header part */
+.container{
+    padding-block: 56px 0px;
+}
+/* the navbar right and left div */
+.navbar{
+    display:flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: 191px;
+}
+/* right div items in the unordered list */
+.right-div li{
+    display: inline;
+    padding-inline-end: 47px;
+}
+.right-div li:last-child{
+    padding-inline-end: 0;
+}
+/* space at the start of the left div */
+.left-div img{
+    height: 41px;
+    width: 160px;
+}
+/* right div content */
+.right-div{
+    width: 545px;
+    font-size: 18px;
+}
+/* styling the anchor of the li in the unordered list */
+.right-div a{
+    list-style-type: none;    
+    text-decoration: none;
+    -webkit-text-fill-color: black;
+}
