@@ -7,20 +7,25 @@
     padding-block: 56px 0px;
 }
 /* the navbar right and left div */
+/* width = 100% - (191 / 1600) * 100 ~= 80 */
 .navbar{
     display:flex;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    margin-inline: 191px;
+    margin-inline:auto;
+    width: 80%;
 }
 /* right div items in the unordered list */
 .right-div li{
     display: inline;
-    padding-inline-end: 47px;
+    
 }
-.right-div li:last-child{
-    padding-inline-end: 0;
+.right-div .navbar-link {
+    margin-inline-end: 32px;
+}
+.right-div .navbar-link:last-child{
+    margin-inline-end: 50px;
 }
 /* space at the start of the left div */
 .left-div img{
@@ -29,7 +34,6 @@
 }
 /* right div content */
 .right-div{
-    width: 545px;
     font-size: 18px;
 }
 /* styling the anchor of the li in the unordered list */
@@ -37,4 +41,30 @@
     list-style-type: none;    
     text-decoration: none;
     -webkit-text-fill-color: black;
+}
+header {
+    background-image: url(../Images/element.png);
+    background-repeat: no-repeat;
+    background-position: left top 160px;
+}
+.hero{
+    width:80%;
+    margin-inline:auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero .text{
+    width: 40%;
+}
+.hero img{
+    width: 50%;
+   height: 598px;
+}
+.hero .text h2{
+    font-size: 48px;
+    margin-bottom: 20px; 
+}
+.hero .text p{
+    font-size: 21px;
 }
