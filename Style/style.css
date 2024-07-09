@@ -40,11 +40,11 @@ img {
 }
 .navbar ul{
     position: relative;
-    left: -6%;
+    left: -5%;
 }
 .navbar-link {
     display: inline;
-    margin-inline-end: 1.5rem;
+    margin-inline-end: 2.25rem;
     
 }
 .navbar-link a{
@@ -83,7 +83,7 @@ img {
     max-width: 75%;
     margin-bottom: 2.5rem;
 }
-body {
+header {
     background-image: url(../Images/element.png);
     background-repeat: no-repeat;
     background-position: left top 160px;
