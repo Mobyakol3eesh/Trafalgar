@@ -176,16 +176,50 @@ header {
     background-color: white;
     color:rgba(69, 143, 246, 1);
     border: solid 1.4px;
+    
 }
 .our-services .primary-button {
     display: block;
     margin-inline: auto;
 }
 .healthcare-prov {
-    width: 90%;
+    width: 85%;
     margin-inline: auto;
     display: flex;
     flex-wrap:nowrap;
     justify-content: space-between;
     align-items: center;
+    position:relative;
+}
+
+.healthcare-prov .text{
+    width: 30%;
+    margin-inline: auto;
+    position: relative;
+    top: 12px;
+    
+}
+.healthcare-prov .text h2{
+    font-size: 2.25rem;
+    font-family: Mulish-Bold;
+    line-height: 3.5rem;
+    position: relative;
+    margin-bottom: 64px;
+}
+.healthcare-prov .text h2::after {
+    content: '';
+    display: block;
+    border-style: hidden;
+    margin-top: 32px;
+    background-color: black;
+    width: 3.5rem;
+    height: 0.125rem;
+    border-radius: 5px;
+    position: absolute;
+}
+.healthcare-prov .text p {
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    color: rgba(125, 121, 135, 1);
+    margin-bottom: 38px;
 }
