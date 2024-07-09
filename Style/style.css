@@ -24,6 +24,7 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 /* Header  */
 .container {
     width: 80%;
@@ -36,7 +37,6 @@ img {
     align-items: center;
     justify-content: space-between;
     padding-block: 56px;
-    min-width: 650px;
 }
 .navbar ul{
     position: relative;
@@ -73,20 +73,21 @@ img {
 .hero .text h2{
     font-size: 3rem;
     font-family: Mulish-Bold;
-    max-width: 82%;
+    max-width: 415px;
     margin-bottom: 1.5rem;
 }
 .hero .text p{
     font-size: 1.31rem;
-    font-family: Mulish-Light;
     color: rgba(125, 121, 135, 1);
     max-width: 75%;
+    line-height: 2rem;
     margin-bottom: 2.5rem;
 }
 header {
     background-image: url(../Images/element.png);
     background-repeat: no-repeat;
     background-position: left top 160px;
+    margin-bottom: 10rem;
 }
 .button {
     text-decoration: none;
@@ -98,5 +99,93 @@ header {
     padding-block: 16px;
     text-align: center;
     border-radius: 55px;
-    width: 30%;
+    width: 200px;
+}
+.our-services {
+    padding-block: 64px;
+    background-image: url(../Images/Vector.png),url(../Images/element2.png);
+    background-repeat: no-repeat;
+    background-position: left -20px top 260px,right 11% top 53%;
+    margin-bottom: 10rem;
+}
+.our-services .text{
+    width: 60%;
+    margin-inline: auto;
+    margin-bottom: 56px;
+}
+.our-services .text h3 {
+    font-size: 2.25rem;
+    font-family: Mulish-Bold;
+    text-align: center;
+    position: relative;
+    margin-bottom: 64px;
+}
+.our-services .text h3::after{
+    content: '';
+    display: block;
+    border-style: hidden;
+    margin-top: 32px;
+    background-color: black;
+    width: 3.5rem;
+    height: 0.125rem;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.our-services .text  p{
+    font-size: 1.125rem;
+    color: rgba(125, 121, 135, 1);
+    text-align: center;
+    line-height: 1.875rem;
+}
+.our-services .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 75%;
+    margin-inline: auto;
+    margin-bottom: 56px;
+}
+.our-services .cards .card {
+    background-color:  rgba(255, 255, 255, 1);
+    padding-inline: 1.625rem;
+    box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);
+    padding-block: 64px;
+    height: auto;
+    margin: 15px;
+    border-radius: 1.25rem;
+    width: calc( (100% / 3 ) -  2 * 15px - 2 * 26px);
+}
+.our-services .cards .card img{
+    width: auto;
+    max-height: 71px;
+    margin-bottom: 20px;
+}
+.our-services .cards .card h4 {
+    font-size: 1.5rem;
+    font-family: Mulish-Bold;
+    margin-bottom: 20px;
+}
+.our-services .cards .card p{
+    color: rgba(125, 121, 135, 1);
+    line-height: 1.75rem;
+    max-width: 82%;
+}
+.primary-button{
+    background-color: white;
+    color:rgba(69, 143, 246, 1);
+    border: solid 1.4px;
+}
+.our-services .primary-button {
+    display: block;
+    margin-inline: auto;
+}
+.healthcare-prov {
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
