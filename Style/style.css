@@ -385,9 +385,9 @@ header {
 
 
 .article{
-    background-image: url(../Images/element2.png) ;
-    background-repeat: no-repeat;
-    background-position: top 15.5% left 13%;
+    background-image: url(../Images/element2.png),url(../Images/element2.png) ;
+    background-repeat: no-repeat,no-repeat;
+    background-position: top 15.5% left 13%, bottom -45px right 91.42px;
     position: relative;
     padding-bottom: 10rem;
 }
@@ -477,6 +477,14 @@ footer {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: flex-start;
+    position: relative;
+}
+footer::after {
+    content: url(../Images/element2.png);
+    position: absolute;    
+    left: -19px;
+    bottom: -20px;
+    overflow: hidden;
 }
 .col-two, .col-three, .col-four{
     padding-top: 3.5px
