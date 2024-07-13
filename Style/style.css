@@ -387,9 +387,9 @@ header {
 .article{
     background-image: url(../Images/element2.png) ;
     background-repeat: no-repeat;
-    background-position: top 22.5% left 13%;
+    background-position: top 15.5% left 13%;
     position: relative;
-
+    padding-bottom: 10rem;
 }
 .article h3 {
     font-size: 2.25rem;
@@ -398,15 +398,13 @@ header {
     position: relative;
     margin-bottom: 8rem;
 }
-.article::after{
+.article::before{
     content: '';
     position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translateX(-50%);
-    width:auto;
+    width:100%;
     height: 100%;
     background-image: url(../Images/VectorNearFooter.png);
+    background-position: right top 25%;
     background-repeat: no-repeat;
     opacity: 60%; 
     z-index: -1; 
@@ -430,7 +428,7 @@ header {
     margin-inline:auto;
     justify-content: center;
     width: 72%;
-    
+    margin-bottom: 64px;
 }
 .article .article-cards .a-card {
     margin-inline: 15px;
@@ -465,5 +463,76 @@ header {
 }
 #link i{
     margin-inline-start: 10px;
+}
+.article a {
+    display: block;
+    margin-inline: auto;
+}
+footer {
+    background-image: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    padding-block: 126px;
+    padding-inline-start: 12%;
+    padding-inline-end: 16%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.col-two, .col-three, .col-four{
+    padding-top: 3.5px
+}
+.coloumn h5 {
+    font-size: 1.25rem;
+    font-family: Mulish-Bold;
+    color: white;
+}
+.coloumn ul{
+    list-style: none;
+}
+
+.coloumn li{
+    margin-block: 20px;
+}
+
+.coloumn li:first-child{
+    margin-block-start: 27px;
+}
+.coloumn a{
+    text-decoration: none;
+    font-size: 1.125rem;
+    color: white;
+}
+.logo {
+    width: 160px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.logo .img-bg{
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.col-one .logo h5 {
+    font-size: 1.5rem;
+    font-family: Mulish-Bold;
+    color: white;
+}
+.col-one p{
+    font-size: 1.125rem;
+    color: white;
+    line-height: 1.75rem;
+    max-width: 380px;
+    margin-bottom: 32px;
+}
+.col-one #citation{
+    margin-bottom: 0;
+    font-size: 1rem;
 }
 
