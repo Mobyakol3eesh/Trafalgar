@@ -480,10 +480,10 @@ footer {
     position: relative;
 }
 footer::after {
-    content: url(../Images/element2.png);
+    content: url(../Images/elementfoot.svg);
     position: absolute;    
-    left: -19px;
-    bottom: -20px;
+    left: 0;
+    bottom: 0;
     overflow: hidden;
 }
 .col-two, .col-three, .col-four{
